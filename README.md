@@ -1,4 +1,4 @@
-# chapter-04 Exercise
+# chapter-04 exercise
  1. Fork this repo
  2. Clone your fork
  3. Style the Learning Mobile Apps Chapter 04 contact list with  your own selection of colors/shapes/styles
