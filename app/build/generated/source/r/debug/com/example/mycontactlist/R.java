@@ -11,8 +11,12 @@ public final class R {
     public static final class attr {
     }
     public static final class color {
-        public static final int navbar_background=0x7f040000;
-        public static final int toolbar_background=0x7f040001;
+        public static final int darkYellow=0x7f040000;
+        public static final int lightYellow=0x7f040001;
+        public static final int navbar_background=0x7f040002;
+        public static final int red=0x7f040003;
+        public static final int toolbar_background=0x7f040004;
+        public static final int yellow=0x7f040005;
     }
     public static final class dimen {
         public static final int activity_horizontal_margin=0x7f050000;
@@ -22,8 +26,10 @@ public final class R {
         public static final int appicon=0x7f020000;
         public static final int contactlisticon=0x7f020001;
         public static final int mapicon=0x7f020002;
-        public static final int photoiconsmall=0x7f020003;
-        public static final int settingsicon=0x7f020004;
+        public static final int mylightyellowshape2=0x7f020003;
+        public static final int myshape2=0x7f020004;
+        public static final int photoiconsmall=0x7f020005;
+        public static final int settingsicon=0x7f020006;
     }
     public static final class id {
         public static final int action_settings=0x7f09001d;
