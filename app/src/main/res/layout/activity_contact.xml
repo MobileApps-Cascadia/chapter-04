@@ -17,7 +17,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@color/navbar_background" >
+        android:background="@color/darkYellow" >
 
         <ImageButton
             android:id="@+id/imageButtonList"
@@ -105,7 +105,8 @@
                 android:layout_below="@+id/textContact"
                 android:ems="14"
                 android:imeOptions="actionNext"
-                android:inputType="textCapWords" >
+                android:inputType="textCapWords"
+                android:background="@drawable/myshape2">
 
             </EditText>
 
@@ -129,7 +130,8 @@
                 android:layout_below="@+id/textAddress"
                 android:ems="14"
                 android:imeOptions="actionNext"
-                android:inputType="textCapWords" >
+                android:inputType="textCapWords"
+                android:background="@drawable/myshape2">
 
             </EditText>
             
@@ -143,7 +145,8 @@
                 android:ems="8"
                 android:imeOptions="actionNext"
                 android:nextFocusDown="@+id/editState"
-                android:inputType="textCapWords" >
+                android:inputType="textCapWords"
+                android:background="@drawable/mylightyellowshape2">
 
             </EditText>
             
@@ -157,7 +160,8 @@
                 android:maxLength="2"
                 android:imeOptions="actionNext"
                 android:nextFocusDown="@+id/editZipcode"
-                android:inputType="textCapCharacters" >
+                android:inputType="textCapCharacters"
+               android:background="@drawable/mylightyellowshape2">
 
             </EditText>
             
@@ -171,7 +175,8 @@
                 android:maxLength="5"
                 android:imeOptions="actionNext"
                 android:nextFocusDown="@+id/editHome"
-                android:inputType="numberSigned" >
+                android:inputType="numberSigned"
+                android:background="@drawable/mylightyellowshape2">
 
             </EditText>
 
@@ -197,7 +202,8 @@
                 android:maxLength="14"
                 android:ems="7"
                 android:nextFocusDown="@+id/editCell"
-                android:inputType="textCapWords" >
+                android:inputType="textCapWords"
+               android:background="@drawable/myshape2">
 
             </EditText>
             
@@ -221,7 +227,8 @@
                 android:ems="7"
                 android:imeOptions="actionNext"
                 android:nextFocusDown="@+id/editEMail"
-                android:inputType="textCapWords" >
+                android:inputType="textCapWords"
+               android:background="@drawable/mylightyellowshape2">
 
             </EditText>
             
@@ -244,7 +251,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_below="@+id/textEMail"
                 android:ems="13"
-                android:inputType="textEmailAddress" >
+                android:inputType="textEmailAddress"
+                android:background="@color/red">
 
             </EditText>
             
