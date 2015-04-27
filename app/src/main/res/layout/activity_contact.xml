@@ -26,7 +26,8 @@
             android:layout_centerVertical="true"
             android:layout_marginRight="20dp"
             android:layout_toLeftOf="@+id/imageButtonMap"
-            android:src="@drawable/contactlisticon" />
+            android:src="@drawable/contactlisticon"
+            android:background="@null"/>
 
         <ImageButton
             android:id="@+id/imageButtonMap"
@@ -34,7 +35,8 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:src="@drawable/mapicon" />
+            android:src="@drawable/mapicon"
+            android:background="@null"/>
 
         <ImageButton
             android:id="@+id/imageButtonSettings"
@@ -43,7 +45,8 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="20dp"
             android:layout_toRightOf="@+id/imageButtonMap"
-            android:src="@drawable/settingsicon" />
+            android:src="@drawable/settingsicon"
+            android:background="@null"/>
     </RelativeLayout>
 
     <RelativeLayout
@@ -52,7 +55,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:background="@color/toolbar_background" >
+        style="@style/buttons">
 
         <ToggleButton
             android:id="@+id/toggleButtonEdit"
@@ -60,7 +63,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="20dp"
-            android:text="ToggleButton" />
+            android:text="ToggleButton"
+            />
 
         <Button
             android:id="@+id/buttonSave"
@@ -94,6 +98,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="5dp"
                 android:text="Contact:"
+                style="@style/text"
                 android:textAppearance="?android:attr/textAppearanceSmall" />
 
             <EditText
@@ -105,7 +110,8 @@
                 android:layout_below="@+id/textContact"
                 android:ems="14"
                 android:imeOptions="actionNext"
-                android:inputType="textCapWords" >
+                android:inputType="textCapWords"
+                android:background="@drawable/myshape">
 
             </EditText>
 
@@ -118,6 +124,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="15dp"
                 android:text="Address:"
+                style="@style/text"
                 android:textAppearance="?android:attr/textAppearanceSmall" />
 
            <EditText
@@ -129,7 +136,8 @@
                 android:layout_below="@+id/textAddress"
                 android:ems="14"
                 android:imeOptions="actionNext"
-                android:inputType="textCapWords" >
+                android:inputType="textCapWords"
+               android:background="@drawable/myshape">
 
             </EditText>
             
@@ -137,13 +145,14 @@
                 android:id="@+id/editCity"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_marginLeft="10dp"
-                android:layout_below="@+id/editAddress"
-                android:ems="8"
+               android:ems="8"
                 android:imeOptions="actionNext"
                 android:nextFocusDown="@+id/editState"
-                android:inputType="textCapWords" >
+                android:inputType="textCapWords"
+               android:background="@drawable/myshape"
+               android:layout_below="@+id/editAddress"
+               android:layout_alignLeft="@+id/textHome"
+               android:layout_alignStart="@+id/textHome">
 
             </EditText>
             
@@ -157,7 +166,8 @@
                 android:maxLength="2"
                 android:imeOptions="actionNext"
                 android:nextFocusDown="@+id/editZipcode"
-                android:inputType="textCapCharacters" >
+                android:inputType="textCapCharacters"
+               android:background="@drawable/myshape">
 
             </EditText>
             
@@ -171,7 +181,8 @@
                 android:maxLength="5"
                 android:imeOptions="actionNext"
                 android:nextFocusDown="@+id/editHome"
-                android:inputType="numberSigned" >
+                android:inputType="numberSigned"
+                android:background="@drawable/myshape">
 
             </EditText>
 
@@ -184,6 +195,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="15dp"
                 android:text="Home Phone:"
+               style="@style/text"
                 android:textAppearance="?android:attr/textAppearanceSmall" />
 
            <EditText
@@ -197,7 +209,8 @@
                 android:maxLength="14"
                 android:ems="7"
                 android:nextFocusDown="@+id/editCell"
-                android:inputType="textCapWords" >
+                android:inputType="textCapWords"
+               android:background="@drawable/myshape">
 
             </EditText>
             
@@ -208,6 +221,7 @@
                 android:layout_alignBottom="@+id/textHome"
                 android:layout_alignLeft="@+id/editCell"
                 android:text="Cell Phone:"
+               style="@style/text"
                 android:textAppearance="?android:attr/textAppearanceSmall" />
 
            <EditText
@@ -221,7 +235,8 @@
                 android:ems="7"
                 android:imeOptions="actionNext"
                 android:nextFocusDown="@+id/editEMail"
-                android:inputType="textCapWords" >
+                android:inputType="textCapWords"
+               android:background="@drawable/myshape">
 
             </EditText>
             
@@ -234,6 +249,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="15dp"
                 android:text="E-Mail Address:"
+               style="@style/text"
                 android:textAppearance="?android:attr/textAppearanceSmall" />
 
            <EditText
@@ -244,7 +260,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_below="@+id/textEMail"
                 android:ems="13"
-                android:inputType="textEmailAddress" >
+                android:inputType="textEmailAddress"
+               android:background="@drawable/myshape">
 
             </EditText>
             
@@ -258,6 +275,7 @@
                 android:layout_marginTop="15dp"
                 android:paddingBottom="25dp"
                 android:text="Birthday:"
+               style="@style/text"
                 android:textAppearance="?android:attr/textAppearanceSmall" />
 
            <TextView
@@ -269,7 +287,9 @@
                 android:layout_marginLeft="10dp"
                 android:paddingBottom="25dp"
                 android:text="01/01/1970"
-                android:textAppearance="?android:attr/textAppearanceSmall" />
+               style="@style/text"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+               />
 
            <Button
                android:id="@+id/btnBirthday"
