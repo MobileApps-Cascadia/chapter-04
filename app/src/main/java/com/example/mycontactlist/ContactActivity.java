@@ -46,7 +46,7 @@ public class ContactActivity extends FragmentActivity implements SaveDateListene
     
 	private void initListButton() {
         ImageButton list = (ImageButton) findViewById(R.id.imageButtonList);
-        list.setOnClickListener(new View.OnClickListener() {
+        list.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
     			Intent intent = new Intent(ContactActivity.this, ContactListActivity.class);
     			intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
@@ -84,7 +84,6 @@ public class ContactActivity extends FragmentActivity implements SaveDateListene
 			public void onClick(View arg0) {
 				setForEditing(editToggle.isChecked());				
 			}
-
 		});
 	}
 		

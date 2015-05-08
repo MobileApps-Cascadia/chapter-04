@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="navbar_background">#1a1a48</color>
-    <color name="toolbar_background">#bebebe</color>
-    
+    <color name="toolbar_background">#1a1a48</color>
+    <color name="editName_background">#1a1a48</color>
+    <color name="editAddress_background">#bebebe</color>
+    <color name="editCity_background">#1a1a48</color>
+    <color name="editState_background">#bebebe</color>
+    <color name="editZipcode_background">#1a1a48</color>
+    <color name="editHome_background">#bebebe</color>
+    <color name="editCell_background">#1a1a48</color>
+    <color name="editEMail_background">#bebebe</color>
 </resources>
