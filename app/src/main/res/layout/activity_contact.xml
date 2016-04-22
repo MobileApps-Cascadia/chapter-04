@@ -4,11 +4,11 @@
     android:layout_height="match_parent"
     tools:context=".ContactActivity" >
     
-                <LinearLayout
-            android:focusable="true"
-            android:focusableInTouchMode="true"
-            android:layout_width="0px"
-            android:layout_height="0px" />
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="0px"
+        android:layout_height="0px" />
 
     
 
@@ -17,7 +17,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@color/navbar_background" >
+        android:background="@color/lilac" >
 
         <ImageButton
             android:id="@+id/imageButtonList"
@@ -52,12 +52,13 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:background="@color/toolbar_background" >
+        android:background="@color/pale_green" >
 
         <ToggleButton
             android:id="@+id/toggleButtonEdit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            style="@style/ButtonStyle"
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="20dp"
             android:text="ToggleButton" />
@@ -66,6 +67,7 @@
             android:id="@+id/buttonSave"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            style="@style/ButtonStyle"
             android:layout_alignParentRight="true"
             android:layout_marginRight="20dp"
             android:text="Save" />
@@ -81,12 +83,13 @@
         
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
             
             
 
             <TextView
                 android:id="@+id/textContact"
+                style="@style/TextViewCustomStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
@@ -94,7 +97,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="5dp"
                 android:text="Contact:"
-                android:textAppearance="?android:attr/textAppearanceSmall" />
+                android:textAppearance="?android:attr/textAppearanceMedium" />
 
             <EditText
                 android:id="@+id/editName"
@@ -104,6 +107,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_below="@+id/textContact"
                 android:ems="14"
+                android:background="@color/pale_green"
                 android:imeOptions="actionNext"
                 android:inputType="textCapWords" >
 
@@ -111,6 +115,7 @@
 
             <TextView
                 android:id="@+id/textAddress"
+                style="@style/TextViewCustomStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
@@ -177,7 +182,8 @@
 
            <TextView
                 android:id="@+id/textHome"
-                android:layout_width="wrap_content"
+               style="@style/TextViewCustomStyle"
+               android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_below="@+id/editCity"
@@ -203,7 +209,8 @@
             
            <TextView
                 android:id="@+id/textCell"
-                android:layout_width="wrap_content"
+               style="@style/TextViewCustomStyle"
+               android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignBottom="@+id/textHome"
                 android:layout_alignLeft="@+id/editCell"
@@ -227,7 +234,8 @@
             
            <TextView
                 android:id="@+id/textEMail"
-                android:layout_width="wrap_content"
+               style="@style/TextViewCustomStyle"
+               android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_below="@+id/editHome"
@@ -250,6 +258,7 @@
             
            <TextView
                 android:id="@+id/textBday"
+                style="@style/TextViewCustomStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
@@ -273,9 +282,9 @@
 
            <Button
                android:id="@+id/btnBirthday"
-               style="?android:attr/buttonStyleSmall"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
+               style="@style/ButtonStyle"
                android:layout_alignParentRight="true"
                android:layout_marginRight="10dp"
                android:layout_alignBaseline="@+id/textBirthday"

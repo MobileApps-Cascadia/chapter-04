@@ -11,8 +11,11 @@ public final class R {
     public static final class attr {
     }
     public static final class color {
-        public static final int navbar_background=0x7f040000;
-        public static final int toolbar_background=0x7f040001;
+        public static final int grey_blue=0x7f040000;
+        public static final int lilac=0x7f040001;
+        public static final int navbar_background=0x7f040002;
+        public static final int pale_green=0x7f040003;
+        public static final int toolbar_background=0x7f040004;
     }
     public static final class dimen {
         public static final int activity_horizontal_margin=0x7f050000;
@@ -24,6 +27,7 @@ public final class R {
         public static final int mapicon=0x7f020002;
         public static final int photoiconsmall=0x7f020003;
         public static final int settingsicon=0x7f020004;
+        public static final int settingsicon_old=0x7f020005;
     }
     public static final class id {
         public static final int action_settings=0x7f09001d;
@@ -91,5 +95,8 @@ public final class R {
         /**  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f070001;
+        public static final int ButtonStyle=0x7f070002;
+        public static final int MainLayoutTheme=0x7f070003;
+        public static final int TextViewCustomStyle=0x7f070004;
     }
 }
