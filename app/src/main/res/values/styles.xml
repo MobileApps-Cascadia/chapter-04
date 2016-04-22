@@ -15,6 +15,26 @@
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowBackground">@color/body_background</item>
     </style>
 
+    <style name="headerStyle">
+        <item name="android:background">@color/header_background</item>
+        <item name="android:textSize">@dimen/header_font_size</item>
+        <item name="android:textColor">@color/caption_color</item>
+    </style>
+
+    <style name="textEntryStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/title_color</item>
+        <item name="android:background">@drawable/rounded_box</item>
+    </style>
+
+    <style name="labelStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/caption_color</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
 </resources>
