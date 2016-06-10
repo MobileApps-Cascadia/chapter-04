@@ -2,5 +2,8 @@
 <resources>
     <color name="navbar_background">#1a1a48</color>
     <color name="toolbar_background">#bebebe</color>
+    <color name="dark">#1e1e1e</color>
+    <color name="truffle">#d98c27</color>
+    <color name="killer_queen">#c87d5a</color>
     
 </resources>
