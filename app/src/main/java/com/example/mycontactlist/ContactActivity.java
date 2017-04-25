@@ -32,6 +32,7 @@ public class ContactActivity extends FragmentActivity implements SaveDateListene
         initSettingsButton();
         initToggleButton();
         initChangeDateButton();
+		initFavButton();
         
         setForEditing(false);
     }
@@ -53,6 +54,16 @@ public class ContactActivity extends FragmentActivity implements SaveDateListene
     			startActivity(intent);
             }
         });
+	}
+
+	private void initFavButton(){
+		ImageButton list = (ImageButton) findViewById(R.id.imageButton4);
+		list.setOnClickListener (new View.OnClickListener(){
+			public void onClick(View v){
+				Intent intent = new Intent(ContactActivity.this, ContactListActivity.class);
+				startActivity(intent);
+			}
+		});
 	}
 	
 	private void initMapButton() {
