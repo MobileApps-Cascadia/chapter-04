@@ -106,7 +106,8 @@
                 android:layout_below="@+id/textContact"
                 android:ems="14"
                 android:imeOptions="actionNext"
-                android:inputType="textCapWords" >
+                android:inputType="textCapWords"
+                style="@style/textViewS" >
 
             </EditText>
 
@@ -130,7 +131,8 @@
                 android:layout_below="@+id/textAddress"
                 android:ems="14"
                 android:imeOptions="actionNext"
-                android:inputType="textCapWords" >
+                android:inputType="textCapWords"
+               style="@style/textViewS" >
 
             </EditText>
             
@@ -144,7 +146,8 @@
                 android:ems="8"
                 android:imeOptions="actionNext"
                 android:nextFocusDown="@+id/editState"
-                android:inputType="textCapWords" >
+                android:inputType="textCapWords"
+               style="@style/textViewS" >
 
             </EditText>
             
@@ -158,7 +161,8 @@
                 android:maxLength="2"
                 android:imeOptions="actionNext"
                 android:nextFocusDown="@+id/editZipcode"
-                android:inputType="textCapCharacters" >
+                android:inputType="textCapCharacters"
+               style="@style/textViewS" >
 
             </EditText>
             
@@ -172,7 +176,8 @@
                 android:maxLength="5"
                 android:imeOptions="actionNext"
                 android:nextFocusDown="@+id/editHome"
-                android:inputType="numberSigned" >
+                android:inputType="numberSigned"
+                style="@style/textViewS" >
 
             </EditText>
 
@@ -198,7 +203,8 @@
                 android:maxLength="14"
                 android:ems="7"
                 android:nextFocusDown="@+id/editCell"
-                android:inputType="textCapWords" >
+                android:inputType="textCapWords"
+               style="@style/textViewS" >
 
             </EditText>
             
@@ -222,7 +228,8 @@
                 android:ems="7"
                 android:imeOptions="actionNext"
                 android:nextFocusDown="@+id/editEMail"
-                android:inputType="textCapWords" >
+                android:inputType="textCapWords"
+               style="@style/textViewS" >
 
             </EditText>
             
