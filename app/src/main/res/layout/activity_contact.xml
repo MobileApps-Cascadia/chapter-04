@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ContactActivity" >
-    
+
                 <LinearLayout
             android:focusable="true"
             android:focusableInTouchMode="true"
@@ -17,7 +17,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@color/navbar_background" >
+        android:background="@color/primary" >
 
         <ImageButton
             android:id="@+id/imageButtonList"
@@ -26,7 +26,7 @@
             android:layout_centerVertical="true"
             android:layout_marginRight="20dp"
             android:layout_toLeftOf="@+id/imageButtonMap"
-            android:src="@drawable/contactlisticon" />
+            android:src="@drawable/snek" />
 
         <ImageButton
             android:id="@+id/imageButtonMap"
@@ -34,7 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:src="@drawable/mapicon" />
+            android:src="@drawable/landingplane" />
 
         <ImageButton
             android:id="@+id/imageButtonSettings"
@@ -43,7 +43,7 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="20dp"
             android:layout_toRightOf="@+id/imageButtonMap"
-            android:src="@drawable/settingsicon" />
+            android:src="@drawable/bug" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -52,7 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:background="@color/toolbar_background" >
+        android:background="@color/accent" >
 
         <ToggleButton
             android:id="@+id/toggleButtonEdit"
@@ -77,7 +77,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/toolbar"
-        android:layout_above="@+id/navbar" >
+        android:layout_above="@+id/navbar"
+        android:background="@color/primary">
         
         <RelativeLayout
             android:layout_width="match_parent"
@@ -244,7 +245,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_below="@+id/textEMail"
                 android:ems="13"
-                android:inputType="textEmailAddress" >
+                android:inputType="textEmailAddress"
+                style="@style/textViewS" >
 
             </EditText>
             

@@ -17,4 +17,10 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
 
+    <style name="textViewS">
+        <item name="android:background">
+            @color/accent
+        </item>
+    </style>>
+
 </resources>
