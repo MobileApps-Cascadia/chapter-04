@@ -10,11 +10,30 @@
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
         -->
+
     </style>
 
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+
+
+    </style>
+
+    <style name="myAwesomeTheme" parent="AppTheme">
+        <item name="android:textColor">@color/accent</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="icon_style">
+        <item name="android:tint">"@color/icons"</item>
+        <item name="android:backgroundTint">"@color/primary"</item>
+    </style>
+
+    <style name="textbox_style">
+        <item name="android:foregroundTint">"@color/secondary_text"</item>
+        <item name="android:backgroundTint">"@color/accent"</item>
+        <item name="android:background">"@color/accent"</item>
     </style>
 
 </resources>
