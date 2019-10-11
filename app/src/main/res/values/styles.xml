@@ -16,5 +16,15 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
+    <style name="FontColor">
+        <item name="android:textColor">@color/primaryTextColor</item>
+    </style>
+    <style name="MyTheme" parent="AppBaseTheme">
+        <item name="android:navigationBarColor">@color/primaryColor</item>
+        <item name="android:textColorSecondary">@color/secondaryTextColor</item>
+        <item name="android:editTextBackground">@color/secondaryDarkColor</item>
+        <item name="android:background">@color/secondaryColor</item>
+
+    </style>
 
 </resources>

@@ -17,7 +17,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@color/navbar_background" >
+        android:background="@color/primaryColor" >
 
         <ImageButton
             android:id="@+id/imageButtonList"
@@ -52,7 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:background="@color/toolbar_background" >
+        android:background="@color/primaryColor" >
 
         <ToggleButton
             android:id="@+id/toggleButtonEdit"
@@ -68,6 +68,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_marginRight="20dp"
+            style="@style/FontColor"
             android:text="Save" />
     </RelativeLayout>
 
