@@ -78,7 +78,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/toolbar"
-        android:layout_above="@+id/navbar" >
+        android:layout_above="@+id/navbar"
+        android:background="@color/primaryDarkColor" >
         
         <RelativeLayout
             android:layout_width="match_parent"
@@ -280,7 +281,8 @@
                android:layout_alignParentRight="true"
                android:layout_marginRight="10dp"
                android:layout_alignBaseline="@+id/textBirthday"
-               android:text="Change" />
+               android:text="Change"
+               android:background="@android:drawable/button_onoff_indicator_off"/>
            
            
            
