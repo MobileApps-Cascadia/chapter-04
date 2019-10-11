@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ContactActivity" >
+    tools:context=".ContactActivity">
     
                 <LinearLayout
             android:focusable="true"
@@ -17,7 +17,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@color/navbar_background" >
+        android:background="@color/primary" >
 
         <ImageButton
             android:id="@+id/imageButtonList"
@@ -26,7 +26,8 @@
             android:layout_centerVertical="true"
             android:layout_marginRight="20dp"
             android:layout_toLeftOf="@+id/imageButtonMap"
-            android:src="@drawable/contactlisticon" />
+            style="@style/Icons"
+            android:src="@drawable/ic_list_black_48dp" />
 
         <ImageButton
             android:id="@+id/imageButtonMap"
@@ -34,7 +35,8 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:src="@drawable/mapicon" />
+            style="@style/Icons"
+            android:src="@drawable/ic_map_black_48dp" />
 
         <ImageButton
             android:id="@+id/imageButtonSettings"
@@ -43,7 +45,8 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="20dp"
             android:layout_toRightOf="@+id/imageButtonMap"
-            android:src="@drawable/settingsicon" />
+            style="@style/Icons"
+            android:src="@drawable/ic_settings_black_48dp" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -52,7 +55,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:background="@color/toolbar_background" >
+        android:background="@color/primary" >
 
         <ToggleButton
             android:id="@+id/toggleButtonEdit"
@@ -60,7 +63,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="20dp"
-            android:text="ToggleButton" />
+            android:text="ToggleButton"
+            style="@style/Buttons"/>
 
         <Button
             android:id="@+id/buttonSave"
@@ -68,7 +72,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_marginRight="20dp"
-            android:text="Save" />
+            android:text="Save"
+            style="@style/Buttons"/>
     </RelativeLayout>
 
     <ScrollView
@@ -81,7 +86,7 @@
         
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
             
             
 
@@ -105,7 +110,8 @@
                 android:layout_below="@+id/textContact"
                 android:ems="14"
                 android:imeOptions="actionNext"
-                android:inputType="textCapWords" >
+                android:inputType="textCapWords"
+                android:background="@color/primary_dark">
 
             </EditText>
 
@@ -273,13 +279,13 @@
 
            <Button
                android:id="@+id/btnBirthday"
-               style="?android:attr/buttonStyleSmall"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                android:layout_alignParentRight="true"
                android:layout_marginRight="10dp"
                android:layout_alignBaseline="@+id/textBirthday"
-               android:text="Change" />
+               android:text="Change"
+               style="@style/Buttons"/>
            
            
            

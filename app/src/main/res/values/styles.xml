@@ -10,11 +10,31 @@
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
         -->
+
     </style>
 
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
-    </style>
 
+    </style>
+    <style name="Icons">
+        <item name="android:tint">@color/primary_light</item>
+        <item name="android:background">@color/primary_dark</item>
+    </style>
+    <style name="Buttons">
+        <item name="android:background">@color/primary_dark</item>
+        <item name="android:textColor">@color/primary_light</item>
+    </style>
+    <style name="Textedit" parent="@android:style/Widget.EditText">
+        <item name="android:background">@color/primary_dark</item>
+        <item name="android:textColor">@color/primary_light</item>
+    </style>
+    <style name="maintheme" parent="AppTheme">
+        <item name="android:textColor">@color/primary_dark</item>
+        <item name="android:textSize">25dp</item>
+        <item name="android:button">@color/divider</item>
+        <item name="android:background">@color/primary_light</item>
+        <item name="android:editTextStyle">@style/Textedit</item>
+    </style>
 </resources>
