@@ -17,7 +17,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@color/navbar_background" >
+        android:background="@color/primary_dark" >
 
         <ImageButton
             android:id="@+id/imageButtonList"
@@ -26,7 +26,9 @@
             android:layout_centerVertical="true"
             android:layout_marginRight="20dp"
             android:layout_toLeftOf="@+id/imageButtonMap"
-            android:src="@drawable/contactlisticon" />
+            android:src="@drawable/ic_import_contacts_black_48dp"
+            style="@style/iconStyle"
+            />
 
         <ImageButton
             android:id="@+id/imageButtonMap"
@@ -34,7 +36,9 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:src="@drawable/mapicon" />
+            android:src="@drawable/ic_map_black_48dp"
+            style="@style/iconStyle"
+            />
 
         <ImageButton
             android:id="@+id/imageButtonSettings"
@@ -43,7 +47,9 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="20dp"
             android:layout_toRightOf="@+id/imageButtonMap"
-            android:src="@drawable/settingsicon" />
+            android:src="@drawable/ic_settings_black_48dp"
+            style="@style/iconStyle"
+            />
     </RelativeLayout>
 
     <RelativeLayout
@@ -52,7 +58,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:background="@color/toolbar_background" >
+        android:background="@color/primary_dark" >
 
         <ToggleButton
             android:id="@+id/toggleButtonEdit"
@@ -60,7 +66,9 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="20dp"
-            android:text="ToggleButton" />
+            android:text="ToggleButton"
+            android:background="@color/accent"
+            android:textColor="@color/secondary_text"/>
 
         <Button
             android:id="@+id/buttonSave"
@@ -68,7 +76,10 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_marginRight="20dp"
-            android:text="Save" />
+            android:text="Save"
+            android:background="@color/accent"
+            android:textColor="@color/secondary_text"
+            />
     </RelativeLayout>
 
     <ScrollView
@@ -77,7 +88,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/toolbar"
-        android:layout_above="@+id/navbar" >
+        android:layout_above="@+id/navbar"
+        android:background="@color/primary_light">
         
         <RelativeLayout
             android:layout_width="match_parent"
@@ -94,7 +106,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="5dp"
                 android:text="Contact:"
-                android:textAppearance="?android:attr/textAppearanceSmall" />
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                />
 
             <EditText
                 android:id="@+id/editName"
@@ -105,7 +118,8 @@
                 android:layout_below="@+id/textContact"
                 android:ems="14"
                 android:imeOptions="actionNext"
-                android:inputType="textCapWords" >
+                android:inputType="textCapWords"
+                >
 
             </EditText>
 
@@ -118,7 +132,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="15dp"
                 android:text="Address:"
-                android:textAppearance="?android:attr/textAppearanceSmall" />
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                />
 
            <EditText
                 android:id="@+id/editAddress"
@@ -129,7 +144,8 @@
                 android:layout_below="@+id/textAddress"
                 android:ems="14"
                 android:imeOptions="actionNext"
-                android:inputType="textCapWords" >
+                android:inputType="textCapWords"
+                >
 
             </EditText>
             
@@ -143,7 +159,8 @@
                 android:ems="8"
                 android:imeOptions="actionNext"
                 android:nextFocusDown="@+id/editState"
-                android:inputType="textCapWords" >
+                android:inputType="textCapWords"
+               >
 
             </EditText>
             
@@ -157,7 +174,8 @@
                 android:maxLength="2"
                 android:imeOptions="actionNext"
                 android:nextFocusDown="@+id/editZipcode"
-                android:inputType="textCapCharacters" >
+                android:inputType="textCapCharacters"
+               >
 
             </EditText>
             
@@ -171,7 +189,8 @@
                 android:maxLength="5"
                 android:imeOptions="actionNext"
                 android:nextFocusDown="@+id/editHome"
-                android:inputType="numberSigned" >
+                android:inputType="numberSigned"
+                >
 
             </EditText>
 
@@ -184,7 +203,9 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="15dp"
                 android:text="Home Phone:"
-                android:textAppearance="?android:attr/textAppearanceSmall" />
+                android:textAppearance="?android:attr/textAppearanceSmall"
+
+               />
 
            <EditText
                 android:id="@+id/editHome"
@@ -197,7 +218,8 @@
                 android:maxLength="14"
                 android:ems="7"
                 android:nextFocusDown="@+id/editCell"
-                android:inputType="textCapWords" >
+                android:inputType="textCapWords"
+               >
 
             </EditText>
             
@@ -208,7 +230,8 @@
                 android:layout_alignBottom="@+id/textHome"
                 android:layout_alignLeft="@+id/editCell"
                 android:text="Cell Phone:"
-                android:textAppearance="?android:attr/textAppearanceSmall" />
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                />
 
            <EditText
                 android:id="@+id/editCell"
@@ -221,7 +244,8 @@
                 android:ems="7"
                 android:imeOptions="actionNext"
                 android:nextFocusDown="@+id/editEMail"
-                android:inputType="textCapWords" >
+                android:inputType="textCapWords"
+                >
 
             </EditText>
             
@@ -244,7 +268,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_below="@+id/textEMail"
                 android:ems="13"
-                android:inputType="textEmailAddress" >
+                android:inputType="textEmailAddress"
+                >
 
             </EditText>
             
@@ -279,7 +304,9 @@
                android:layout_alignParentRight="true"
                android:layout_marginRight="10dp"
                android:layout_alignBaseline="@+id/textBirthday"
-               android:text="Change" />
+               android:text="Change"
+               android:background="@color/accent"
+               android:textColor="@color/secondary_text"/>
            
            
            
