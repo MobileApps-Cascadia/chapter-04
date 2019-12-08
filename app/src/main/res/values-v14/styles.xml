@@ -7,6 +7,18 @@
     -->
     <style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
         <!-- API 14 theme customizations can go here. -->
+        <item name="android:textColor">@color/primaryDarkColor</item>
+        <item name="android:background">@color/secondaryColor</item>
+    </style>
+
+    <style name="AppStyle" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:background">@color/primaryLightColor </item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+    </style>
+
+    <style name="AppStyle2" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:background"> @color/secondaryDarkColor</item>
+        <item name="android:textColor">@color/secondaryTextColor</item>
     </style>
 
 </resources>
