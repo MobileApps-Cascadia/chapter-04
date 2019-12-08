@@ -10,14 +10,14 @@
             android:layout_width="0px"
             android:layout_height="0px" />
 
-    
 
     <RelativeLayout
         android:id="@+id/navbar"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@color/navbar_background" >
+        style="@style/AppStyle"
+        >
 
         <ImageButton
             android:id="@+id/imageButtonList"
@@ -26,7 +26,7 @@
             android:layout_centerVertical="true"
             android:layout_marginRight="20dp"
             android:layout_toLeftOf="@+id/imageButtonMap"
-            android:src="@drawable/contactlisticon" />
+            android:src="@drawable/baseline_description_black_18dp" />
 
         <ImageButton
             android:id="@+id/imageButtonMap"
@@ -34,7 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:src="@drawable/mapicon" />
+            android:src="@drawable/baseline_explore_black_18dp" />
 
         <ImageButton
             android:id="@+id/imageButtonSettings"
@@ -43,16 +43,19 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="20dp"
             android:layout_toRightOf="@+id/imageButtonMap"
-            android:src="@drawable/settingsicon" />
+            android:src="@drawable/baseline_build_black_18dp" />
     </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/toolbar"
+        style="@style/AppStyle2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:background="@color/toolbar_background" >
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="1dp"
+        >
 
         <ToggleButton
             android:id="@+id/toggleButtonEdit"
@@ -273,7 +276,7 @@
 
            <Button
                android:id="@+id/btnBirthday"
-               style="?android:attr/buttonStyleSmall"
+               style="@style/AppStyle"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                android:layout_alignParentRight="true"
