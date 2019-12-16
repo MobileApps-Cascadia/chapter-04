@@ -13,8 +13,29 @@
     </style>
 
     <!-- Application theme. -->
-    <style name="AppTheme" parent="AppBaseTheme">
-        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="toolbarStyle">@style/Widget.AppCompat.Toolbar</item>
+        <item name="android:buttonStyle"></item>
     </style>
 
+    <style name="NavBar" parent="AppTheme">
+        <item name="android:navigationBarColor">@color/colorPrimaryLight</item>
+        <item name="android:actionBarItemBackground">@color/colorPrimaryLight</item>
+        <item name="android:background">@color/navbar_background</item>
+        <item name="android:backgroundTint">@color/navbar_background</item>
+    </style>
+
+    <style name="ContactEditor" parent="AppTheme">
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="ButtonsStyle" parent="AppTheme">
+        <item name="android:backgroundTint">@color/colorAccent</item>
+        <item name="android:textColor">@color/textColorSecondary</item>
+    </style>
 </resources>
